@@ -17,8 +17,8 @@ router.post(
   validateResourceMW(createContactValidationSchema),
   createContact
 );
-router.put("/:id", updateContact);
 router.get("/", getAllContacts);
+router.put("/:id", updateContact);
 router.get("/:id", getContact);
 router.delete("/:id", deleteContact);
 
